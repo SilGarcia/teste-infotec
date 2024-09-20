@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFOTEC - Informática para Internet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>INFOTEC</h1>
+    <nav>
+      <ul>
+        <li><a href="#curso">Curso</a></li>
+        <li><a href="#exposicoes">Exposições</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Modo Claro</button>
+  </header>
+
+  <main>
+    <section id="fetec" class="section-fetec">
+      <div class="container">
+        <h1>Fetec</h1>
+        <p>A FETEC é um evento promovido pela Etec Darcy Pereira de Moraes (Itapetininga - SP)...</p>
+        <p>Vem com a gente e divirta-se!</p>
+      </div>
+    </section>
+
+    <section id="curso" class="section-curso">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/_9JEB2ydyT8?si=__zxUHCLFoVaP3br" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="container">
+        <h2>Informática para Internet</h2>
+        <p>Neste curso além da conclusão do ensino médio...</p>
+        <p>Se você gosta de tecnologia e gostaria de se aventurar...</p>
+      </div>
+    </section>
+
+    <section id="exposicoes" class="section-exposicoes">
+      <h2>Exposições</h2>
+      <div class="grid-container">
+        <div class="expo-item">
+          <img src="scratch.jpg" alt="Scratch">
+          <h3>Scratch</h3>
+          <p>Jogos diversos desenvolvidos no Scratch</p>
+          <a href="https://exemplo.com/scratch" target="_blank"><button>Saiba mais</button></a>
+        </div>
+        <div class="expo-item">
+          <img src="musica.jpg" alt="Qual é a Música?">
+          <h3>Qual é a Música?</h3>
+          <p>Projeto interativo que desafia os participantes a identificarem músicas.</p>
+          <a href="https://jucdreis.github.io/disney-musicas" target="_blank"><button>Saiba mais</button></a>
+        </div>
+        <div class="expo-item">
+          <img src="memoria.jpg" alt="Jogo da Memória">
+          <h3>Jogo da Memória</h3>
+          <p>Um jogo da memória digital, divertido e educativo.</p>
+          <a href="https://memocopas.vercel.app/" target="_blank"><button>Saiba mais</button></a>
+        </div>
+        <div class="expo-item">
+          <img src="temperamento.jpg" alt="Teste de Temperamento">
+          <h3>Teste de Temperamento</h3>
+          <p>Uma ferramenta para descobrir o temperamento pessoal com base em respostas simples.</p>
+          <a href="https://exemplo.com/teste-de-temperamento" target="_blank"><button>Saiba mais</button></a>
+        </div>
+        <div class="expo-item">
+          <img src="vocacional.jpg" alt="Teste Vocacional">
+          <h3>Teste Vocacional</h3>
+          <p>Descubra sua área de atuação com base em suas preferências.</p>
+          <a href="https://arineto1.github.io/fetec/" target="_blank"><button>Saiba mais</button></a>
+        </div>
+        <div class="expo-item">
+          <img src="robotica.jpg" alt="Robótica">
+          <h3>Robótica</h3>
+          <p>Projeto de robótica com programação e construção de protótipos.</p>
+          <a href="https://fetecdarcy.github.io/roboticadje" target="_blank"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <p>Projetos desenvolvidos pelas Turmas...</p>
+    <p>Etec Darcy Pereira de Moraes - Itapetininga / SP...</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    let isDarkMode = false;
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      isDarkMode = !isDarkMode;
+      themeToggle.textContent = isDarkMode ? '🌙 Modo Escuro' : '🌞 Modo Claro';
+    });
+  </script>
+</body>
+</html>

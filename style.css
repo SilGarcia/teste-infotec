@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-right: auto;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#theme-toggle {
+  background-color: #fff;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #ccc;
+}
+
+main {
+  padding: 2rem;
+}
+
+.section-fetec {
+  background-image: url('https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-fetec .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  max-width: 600px;
+}
+
+.section-curso {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.video-frame {
+  flex: 1;
+  height: 400px;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.expo-item {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.expo-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.expo-item h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.expo-item a button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expo-item a button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade
